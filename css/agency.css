@@ -11,13 +11,30 @@ body {
 
 .lightBg{
   background-color: #C5C6C7;
+  background-attachment: fixed;
 }
 
 .darkBg{
   background-color: #1f2833;
 }
 
+.portfolioBg{
+	background: /* transparent blue overlay */
+    linear-gradient( rgba(197, 198, 199, 0.5),rgba(197, 198, 199, 0.5) ),
+    url("../img/portfolio/bg.jpg");
+	/*background-image: url("../img/portfolio/bg.jpg");*/
+	background-size: cover;
+	background-attachment: fixed;
 
+}
+.teamBg{
+	background: /* transparent blue overlay */
+    linear-gradient( rgba(31, 40, 51, 0.8),rgba(31, 90, 21, 0.9) ), /* inset your image below  rgba(26, 26, 29, 0.70),rgba(195, 7, 63, 0.70) */
+    url("../img/team/bg.jpg");
+	/*background-image: url("../img/team/bg.jpg");*/
+	background-size: cover;
+	background-attachment: fixed;
+}
 
 
 p {
@@ -25,7 +42,7 @@ p {
 }
 
 a {
-  color: #66FCF1;
+  color: #2c8c99;
 }
 
 a:hover {
@@ -33,7 +50,7 @@ a:hover {
 }
 
 .text-primary {
-  color: #66FCF1 !important;
+  color: #2c8c99 !important;
 }
 
 h1,
@@ -82,8 +99,8 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: #66FCF1;
-  border-color: #66FCF1;
+  background-color: #2c8c99;
+  border-color: #2c8c99;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
@@ -98,12 +115,12 @@ section h3.section-subheading {
 }
 
 ::-moz-selection {
-  background: #66FCF1;
+  background: #2c8c99;
   text-shadow: none;
 }
 
 ::selection {
-  background: #66FCF1;
+  background: #2c8c99;
   text-shadow: none;
 }
 
@@ -130,12 +147,12 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #66FCF1;
+  background-color: #2c8c99;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #mainNav .navbar-brand {
-  color: #66FCF1;
+  color: #2c8c99;
   font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
@@ -153,7 +170,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #66FCF1;
+  color: #2c8c99;
 }
 
 @media (min-width: 992px) {
@@ -191,7 +208,7 @@ header.masthead {
   linear-gradient( rgba(31, 40, 51, 0.8),rgba(31, 40, 51, 0.8) ), /* inset your image below  rgba(26, 26, 29, 0.70),rgba(195, 7, 63, 0.70) */
   url("../img/header-bg.jpg");
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center center;
   background-size: cover;
 }
@@ -290,7 +307,7 @@ header.masthead .intro-text .intro-heading {
   margin: 0;
 }
 
-#portfolio .portfolio-item .portfolio-caption {
+/*#portfolio .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
   padding: 25px;
@@ -308,7 +325,7 @@ header.masthead .intro-text .intro-heading {
   font-style: italic;
   margin: 0;
   font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-}
+}*/
 
 #portfolio * {
   z-index: 2;
@@ -465,7 +482,7 @@ header.masthead .intro-text .intro-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #66FCF1;
+  background-color: #2c8c99;
 }
 
 .timeline > li .timeline-image h4 {
@@ -612,6 +629,7 @@ section#contact {
   background-image: url("../img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 }
 
 section#contact .section-heading {
@@ -636,7 +654,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #66FCF1;
+  border-color: #2c8c99;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -704,5 +722,5 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #66FCF1;
+  background-color: #2c8c99;
 }
